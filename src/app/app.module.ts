@@ -9,13 +9,16 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { ConfirmationPage } from '../pages/confirmation/confirmation';
+import { WelcomePage } from '../pages/welcome/welcome';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
     RegisterPage,
-    ConfirmationPage
+    ConfirmationPage,
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { ConfirmationPage } from '../pages/confirmation/confirmation';
     HomePage,
     LoginPage,
     RegisterPage,
-    ConfirmationPage
+    ConfirmationPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,

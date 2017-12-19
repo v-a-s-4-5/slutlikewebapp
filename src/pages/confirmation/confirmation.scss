@@ -10,35 +10,16 @@ page-confirmation {
                 .button {
                     padding: 25px 0;
                 }
-                .list-md .item-block .item-inner {
-                    border: none;
-                }
-                ion-item.item-input {
-                    .input-inner{
-                        background: transparent;
-                        margin: 15px 0 0;
-                        border-bottom: 1px solid #b2ceff !important;
-                    }
-                } 
-                a {
-                    text-decoration: none;
-                    color: color($colors, light);
-                }
-                .confirmation-text {
-                    p {
-                        color: color($colors, light);
-                        font-size: 11px;
-                        font-weight: 300;
-                    }
-                }
-                .login-btn {
+                .confirm-btn {
+                    margin: 12px 0;
+                    width: 100%;
+                    float: left;
                     .button {
                         margin: 25px 0;
                     }
                 }
-                .sign-in-sec {
-                    color: color($colors, light);
-                    font-weight: 300;
+                .lower-sec {
+                    margin: 8px 0 0;
                 }
             }
         }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the LoginPage page.
  *
@@ -15,7 +16,7 @@ import { RegisterPage } from '../register/register';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alert: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -26,4 +27,24 @@ export class LoginPage {
     this.navCtrl.push(RegisterPage);
   }
 
+  openForgotpassword(){
+    this.alert.create({
+      title: 'Forgot Password',
+      subTitle: 'Please provide the email that you use for register',
+      inputs: [
+        {
+          name: 'email',
+          placeholder: 'Enter Email'
+        }],
+      buttons: [{
+        text: 'Send Email',
+        handler: data =>{
+          console.log(data);
+        }
+      }]
+    }).present();
+  }
+  openHome(){
+      this.navCtrl.setRoot(HomePage);
+      }
 }
